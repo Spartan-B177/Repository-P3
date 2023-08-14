@@ -1,15 +1,247 @@
-/* Header */
+body {
+    width: 375px;
+    margin: 0;
+    background-color: #F6F6F6;
+    font-family: 'Roboto', sans-serif;
+}
 
-.header {
+
+ /* Header */
+ .header {
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 30px;
+     background-color: #ffffff;
+     padding: 20px 90px 20px 20px;
+     font-size: 25px;
+    }
+
+ .header__logo {
+     width: 177px;
+ }
+
+ .header__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 25px 0px 50px 0px;
+
+ }
+ 
+ .header__title {
+   display: flex;
+   text-align: center;
+   width: 275px;
+   margin: 10px;
+   font-weight: bold;
+   font-size: 24px;
+   color: black;
+ }
+
+ .header__text {
+    display: flex;
+    text-align: center;
+    width: 315px;
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    font-weight: 300;
+ }
+
+
+ .header__location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+    gap: 20px;
+    background-color:#EAEAEA;
+    font-weight: 500;
+    font-size: 16px;
+ }
+
+ .header__link {
+   box-shadow: 0px 4px 10px #00000040;
+   border-radius: 30px;
+ }
+
+ .btn {
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+    width: 218px;
+    font-size: 16px;
+    border: none; 
+    background:linear-gradient(#FF79DA, #9356DC );
+    color: #ffffff;
     
+ }
+ 
+ /* Fonctionnement */
+
+.fontionnement {
+   display: flex;
+    flex-direction: column;
+    padding: 15px 10px 20px 20px;
+    background-color: #ffffff;
 }
 
-.header__logo {
+ .fonctionnement__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
 
+ .fonctionnement__element {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 70px;
+    gap: 25px;
+    margin: 10px 0 20px 0;
+    padding: 0 25px 0 25px;
+    font-weight: normal;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px #00000026;
+ }
+
+ .fonctionnement__num {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #F6F6F6;
+   background-color: #9356DC;
+   border-radius: 30px;
+   width: 23px;
+   height: 23px;
+   font-size: 13px;
+   font-weight: 500;
+   position: absolute;
+   left: 25px;
+ }
+
+ .fonctionnement__icon {
+   color: #7E7E7E;
+   font-size: 19px;
+ }
+
+ .fonctionnement__icon--purple {
+   color: #9356DC;
+   font-size: 19px;
+ }
+
+ /* Restaurants */
+
+ .restaurants {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+ }
+
+    .restaurants__block {
+      width: 100%;
+    }
+
+    .restaurants__element {
+      height: 250px;
+      background-color: #ffffff;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .restaurants__image {
+      width: 100%;
+      height: 175px;
+      border-radius: 20px 20px 0 0;
+      object-fit: cover;
+    }
+   
+    .restaurants__card {
+      display: flex;
+      align-items: center;
+      height: 70px;
+      width: 100%;
+    }
+
+    .restaurants__description {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .restaurants__description h3 {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 0 5px 15px;
+    }
+
+    .restaurants__description p {
+      display: flex;
+      flex-direction: column;
+      font-size: 17px;
+      font-weight: 300;
+      margin: 0 0 0 15px;
+    }
+
+    .like__button {
+      background: none;
+      border: none;
+      padding: 30px;
+      font-size: 22px;
+    }
+
+    .new {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 3px;
+      height: 30px;
+      width: 80px;
+      color:#008766;
+      background-color:#99E2D0;
+      margin: 0;
+      position: relative;
+      left: 240px;
+      bottom: 235px;
+    }
+
+/* Footer */
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   background-color: #353535;
+   padding-left: 25px;
 }
 
+.footer__title {
+   font-family: 'Shrikhand', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   color:white;
+   margin: 20px 0 0 0;
+}
 
-.location
+.footer__nav {
+   margin: 10px 0 10px 0;
+   padding: 0;
+}
 
-/* Fonctionnement */
+.footer__link {
+   display: flex;
+   align-items: center;
+   list-style-type: none;
+   margin-bottom: 5px;
+   font-size: 16px;
+   gap: 10px;
+   color: #ffffff;
+}
 
+.footer__icon {
+   width: 12px;
+   font-size: 11px;
+   
+}
